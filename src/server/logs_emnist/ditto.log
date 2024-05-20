@@ -1,0 +1,275 @@
+Setting up a new session...
+==================== ALGORITHM: Ditto ====================                     
+Experiment Arguments:                                                          
+{                                                                              
+    'model': 'lenet5',                                                         
+    'dataset': 'emnist',                                                       
+    'seed': 42,                                                                
+    'join_ratio': 0.1,                                                         
+    'global_epoch': 200,                                                       
+    'local_epoch': 5,                                                          
+    'finetune_epoch': 0,                                                       
+    'test_gap': 100,                                                           
+    'eval_test': 1,                                                            
+    'eval_train': 0,                                                           
+    'local_lr': 0.01,                                                          
+    'momentum': 0.0,                                                           
+    'weight_decay': 0.0,                                                       
+    'verbose_gap': 10,                                                         
+    'batch_size': 32,                                                          
+    'visible': 1,                                                              
+    'global_testset': 0,                                                       
+    'straggler_ratio': 0,                                                      
+    'straggler_min_local_epoch': 1,                                            
+    'external_model_params_file': '',                                          
+    'use_cuda': 1,                                                             
+    'save_log': 1,                                                             
+    'save_model': 0,                                                           
+    'save_fig': 1,                                                             
+    'save_metrics': 1,                                                         
+    'viz_win_name': None,                                                      
+    'pers_epoch': 1,                                                           
+    'lamda': 1,                                                                
+    'dataset_args': {                                                          
+        'dataset': 'emnist',                                                   
+        'client_num': 100,                                                     
+        'fraction': 0.5,                                                       
+        'seed': 42,                                                            
+        'split': 'sample',                                                     
+        'emnist_split': 'byclass',                                             
+        'alpha': 0.1,                                                          
+        'least_samples': 40                                                    
+    }                                                                          
+}                                                                              
+-------------------------- TRAINING EPOCH: 10 --------------------------       
+client [77] (test)  loss: 0.9457 -> 0.7087   acc: 75.09% -> 80.14%             
+client [81] (test)  loss: 1.2333 -> 0.7887   acc: 77.18% -> 83.51%             
+client [21] (test)  loss: 45.6570 -> nan   acc: 0.00% -> 2.74%                 
+client [68] (test)  loss: 4.0598 -> 2.4391   acc: 17.35% -> 53.09%             
+client [93] (test)  loss: nan -> nan   acc: 0.63% -> 0.63%                     
+client [31] (test)  loss: nan -> nan   acc: 2.20% -> 2.20%                     
+client [20] (test)  loss: 1.6282 -> 1.3103   acc: 66.83% -> 65.91%             
+client [59] (test)  loss: 24.1131 -> 1.1721   acc: 0.63% -> 69.18%             
+client [48] (test)  loss: 1.5583 -> 1.9260   acc: 58.22% -> 52.46%             
+client [34] (test)  loss: 0.5493 -> 0.4746   acc: 85.93% -> 86.94%             
+-------------------------- TRAINING EPOCH: 20 --------------------------       
+client [69] (test)  loss: 1.1263 -> 1.2808   acc: 72.02% -> 62.81%             
+client [99] (test)  loss: 0.4100 -> nan   acc: 89.26% -> 5.59%                 
+client [67] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [0] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                      
+client [76] (test)  loss: 1.0582 -> 2.4569   acc: 77.47% -> 60.61%             
+client [41] (test)  loss: 1.6381 -> 2.1637   acc: 46.06% -> 51.74%             
+client [62] (test)  loss: 23.1784 -> nan   acc: 0.07% -> 0.00%                 
+client [2] (test)  loss: 28.2926 -> 1.1317   acc: 0.37% -> 74.59%              
+client [14] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [46] (test)  loss: nan -> nan   acc: 80.57% -> 80.57%                   
+-------------------------- TRAINING EPOCH: 30 --------------------------       
+client [24] (test)  loss: 2.4015 -> 3.8199   acc: 55.56% -> 19.66%             
+client [68] (test)  loss: 1.3617 -> 1.5452   acc: 70.77% -> 69.58%             
+client [57] (test)  loss: nan -> nan   acc: 0.46% -> 0.46%                     
+client [17] (test)  loss: 1.0582 -> 3.9106   acc: 74.90% -> 16.29%             
+client [54] (test)  loss: 3.4364 -> 1.8056   acc: 31.81% -> 64.11%             
+client [23] (test)  loss: 29.3520 -> nan   acc: 0.00% -> 9.55%                 
+client [35] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [59] (test)  loss: 3.5722 -> 1.0597   acc: 11.87% -> 72.14%             
+client [31] (test)  loss: nan -> nan   acc: 2.20% -> 2.20%                     
+client [9] (test)  loss: nan -> nan   acc: 1.95% -> 1.95%                      
+-------------------------- TRAINING EPOCH: 40 --------------------------       
+client [64] (test)  loss: 1.8569 -> 1.5572   acc: 55.36% -> 63.17%             
+client [33] (test)  loss: nan -> nan   acc: 0.16% -> 0.16%                     
+client [16] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [44] (test)  loss: 3.6195 -> 8.1311   acc: 15.21% -> 21.93%             
+client [8] (test)  loss: 3.4892 -> 3.5075   acc: 24.40% -> 31.60%              
+client [31] (test)  loss: nan -> nan   acc: 2.20% -> 2.20%                     
+client [47] (test)  loss: nan -> nan   acc: 8.74% -> 8.74%                     
+client [36] (test)  loss: 1.5056 -> nan   acc: 66.83% -> 0.68%                 
+client [20] (test)  loss: 2.0877 -> 1.6140   acc: 52.73% -> 70.47%             
+client [56] (test)  loss: nan -> nan   acc: 0.71% -> 0.71%                     
+-------------------------- TRAINING EPOCH: 50 --------------------------       
+client [4] (test)  loss: nan -> nan   acc: 0.59% -> 0.59%                      
+client [60] (test)  loss: 3.9714 -> 2.2329   acc: 20.64% -> 48.88%             
+client [28] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [25] (test)  loss: 1.9741 -> nan   acc: 47.27% -> 0.00%                 
+client [58] (test)  loss: nan -> nan   acc: 0.04% -> 0.04%                     
+client [44] (test)  loss: 8.1311 -> 2.0753   acc: 21.93% -> 50.73%             
+client [39] (test)  loss: 1.3662 -> 1.8006   acc: 66.27% -> 64.51%             
+client [29] (test)  loss: 1.1718 -> 2.0423   acc: 71.48% -> 62.22%             
+client [3] (test)  loss: 0.2092 -> nan   acc: 95.19% -> 0.00%                  
+client [84] (test)  loss: 1.0577 -> 1.0003   acc: 74.10% -> 75.04%             
+-------------------------- TRAINING EPOCH: 60 --------------------------       
+client [21] (test)  loss: nan -> nan   acc: 2.74% -> 2.74%                     
+client [84] (test)  loss: nan -> nan   acc: 0.63% -> 0.63%                     
+client [10] (test)  loss: 1.5865 -> 2.1567   acc: 55.29% -> 43.12%             
+client [36] (test)  loss: nan -> nan   acc: 0.68% -> 0.68%                     
+client [65] (test)  loss: 3.0840 -> 14.1345   acc: 53.51% -> 24.78%            
+client [81] (test)  loss: 1.0426 -> 1.0452   acc: 67.57% -> 67.30%             
+client [79] (test)  loss: 1.8226 -> 1.2283   acc: 51.65% -> 65.88%             
+client [42] (test)  loss: 1.1395 -> 1.2182   acc: 68.24% -> 71.56%             
+client [11] (test)  loss: nan -> nan   acc: 0.96% -> 0.96%                     
+client [96] (test)  loss: 0.7738 -> 0.5982   acc: 78.42% -> 82.73%             
+-------------------------- TRAINING EPOCH: 70 --------------------------       
+client [8] (test)  loss: 2.2036 -> 2.1432   acc: 35.63% -> 39.48%              
+client [53] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [52] (test)  loss: 1.4482 -> 1.2330   acc: 58.33% -> 65.89%             
+client [42] (test)  loss: 1.3762 -> 3.8604   acc: 66.01% -> 51.56%             
+client [69] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [59] (test)  loss: 1.1761 -> 1.2381   acc: 72.25% -> 68.10%             
+client [7] (test)  loss: nan -> nan   acc: 7.04% -> 7.04%                      
+client [26] (test)  loss: nan -> nan   acc: 38.14% -> 38.14%                   
+client [49] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [98] (test)  loss: nan -> nan   acc: 1.42% -> 1.42%                     
+-------------------------- TRAINING EPOCH: 80 --------------------------       
+client [98] (test)  loss: nan -> nan   acc: 1.42% -> 1.42%                     
+client [47] (test)  loss: nan -> nan   acc: 8.74% -> 8.74%                     
+client [21] (test)  loss: nan -> nan   acc: 2.74% -> 2.74%                     
+client [77] (test)  loss: nan -> nan   acc: 0.16% -> 0.16%                     
+client [95] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [91] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [14] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [99] (test)  loss: nan -> nan   acc: 5.59% -> 5.59%                     
+client [20] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [39] (test)  loss: 0.8613 -> 0.8587   acc: 77.57% -> 76.02%             
+-------------------------- TRAINING EPOCH: 90 --------------------------       
+client [52] (test)  loss: 1.2330 -> 1.2352   acc: 65.89% -> 67.69%             
+client [62] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [71] (test)  loss: nan -> nan   acc: 5.98% -> 5.98%                     
+client [97] (test)  loss: nan -> nan   acc: 0.57% -> 0.57%                     
+client [30] (test)  loss: nan -> nan   acc: 0.74% -> 0.74%                     
+client [88] (test)  loss: 1.7492 -> 1.1510   acc: 58.97% -> 72.11%             
+client [60] (test)  loss: 0.9067 -> 0.9345   acc: 76.50% -> 74.71%             
+client [82] (test)  loss: 1.1200 -> 1.1692   acc: 55.25% -> 56.23%             
+client [91] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [57] (test)  loss: nan -> nan   acc: 0.46% -> 0.46%                     
+-------------------------- TRAINING EPOCH: 100 --------------------------      
+client [31] (test)  loss: nan -> nan   acc: 2.20% -> 2.20%                     
+client [15] (test)  loss: nan -> nan   acc: 2.19% -> 2.19%                     
+client [71] (test)  loss: nan -> nan   acc: 5.98% -> 5.98%                     
+client [97] (test)  loss: nan -> nan   acc: 0.57% -> 0.57%                     
+client [53] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [77] (test)  loss: nan -> nan   acc: 0.16% -> 0.16%                     
+client [76] (test)  loss: 0.9707 -> 1.0375   acc: 72.20% -> 70.66%             
+client [79] (test)  loss: 1.0917 -> 1.1598   acc: 68.09% -> 67.40%             
+client [28] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [99] (test)  loss: nan -> nan   acc: 5.59% -> 5.59%                     
+-------------------------- TRAINING EPOCH: 110 --------------------------      
+client [97] (test)  loss: nan -> nan   acc: 0.57% -> 0.57%                     
+client [86] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [34] (test)  loss: 0.8477 -> 0.9227   acc: 82.67% -> 81.17%             
+client [73] (test)  loss: nan -> nan   acc: 2.79% -> 2.79%                     
+client [5] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                      
+client [96] (test)  loss: nan -> nan   acc: 2.73% -> 2.73%                     
+client [22] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [60] (test)  loss: 0.9025 -> 0.8926   acc: 76.75% -> 76.81%             
+client [66] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [83] (test)  loss: nan -> nan   acc: 0.76% -> 0.76%                     
+-------------------------- TRAINING EPOCH: 120 --------------------------      
+client [76] (test)  loss: 0.9945 -> 0.9348   acc: 72.08% -> 73.89%             
+client [65] (test)  loss: 3.7649 -> 1.3499   acc: 38.07% -> 63.85%             
+client [95] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [17] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [8] (test)  loss: 1.9920 -> 2.4834   acc: 42.02% -> 42.44%              
+client [35] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [98] (test)  loss: nan -> nan   acc: 1.42% -> 1.42%                     
+client [53] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [43] (test)  loss: nan -> nan   acc: 0.23% -> 0.23%                     
+client [64] (test)  loss: 1.5532 -> 1.3324   acc: 64.37% -> 68.91%             
+-------------------------- TRAINING EPOCH: 130 --------------------------      
+client [21] (test)  loss: nan -> nan   acc: 2.74% -> 2.74%                     
+client [88] (test)  loss: nan -> nan   acc: 21.76% -> 21.76%                   
+client [38] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [3] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                      
+client [5] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                      
+client [41] (test)  loss: 1.0807 -> 1.1632   acc: 65.88% -> 60.65%             
+client [7] (test)  loss: nan -> nan   acc: 7.04% -> 7.04%                      
+client [37] (test)  loss: nan -> nan   acc: 4.99% -> 4.99%                     
+client [45] (test)  loss: 1.5316 -> 1.2414   acc: 63.15% -> 63.66%             
+client [47] (test)  loss: nan -> nan   acc: 8.74% -> 8.74%                     
+-------------------------- TRAINING EPOCH: 140 --------------------------      
+client [16] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [11] (test)  loss: nan -> nan   acc: 0.96% -> 0.96%                     
+client [37] (test)  loss: nan -> nan   acc: 4.99% -> 4.99%                     
+client [41] (test)  loss: 1.1632 -> 1.2386   acc: 60.65% -> 60.41%             
+client [95] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [53] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [22] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [25] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [69] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [46] (test)  loss: nan -> nan   acc: 80.57% -> 80.57%                   
+-------------------------- TRAINING EPOCH: 150 --------------------------      
+client [47] (test)  loss: nan -> nan   acc: 8.74% -> 8.74%                     
+client [69] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [82] (test)  loss: 1.0997 -> 1.2756   acc: 56.42% -> 50.27%             
+client [45] (test)  loss: 1.1710 -> 1.2546   acc: 61.53% -> 63.66%             
+client [7] (test)  loss: nan -> nan   acc: 7.04% -> 7.04%                      
+client [50] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [35] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [24] (test)  loss: 0.9024 -> 0.8393   acc: 74.81% -> 77.53%             
+client [15] (test)  loss: nan -> nan   acc: 2.19% -> 2.19%                     
+client [58] (test)  loss: nan -> nan   acc: 0.04% -> 0.04%                     
+-------------------------- TRAINING EPOCH: 160 --------------------------      
+client [48] (test)  loss: nan -> nan   acc: 3.98% -> 3.98%                     
+client [76] (test)  loss: 0.9658 -> 1.1198   acc: 74.30% -> 71.52%             
+client [67] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [37] (test)  loss: nan -> nan   acc: 4.99% -> 4.99%                     
+client [58] (test)  loss: nan -> nan   acc: 0.04% -> 0.04%                     
+client [64] (test)  loss: 1.2287 -> 1.2691   acc: 70.90% -> 68.28%             
+client [77] (test)  loss: nan -> nan   acc: 0.16% -> 0.16%                     
+client [55] (test)  loss: nan -> nan   acc: 0.48% -> 0.48%                     
+client [12] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [89] (test)  loss: nan -> nan   acc: 9.16% -> 9.16%                     
+-------------------------- TRAINING EPOCH: 170 --------------------------      
+client [84] (test)  loss: nan -> nan   acc: 0.63% -> 0.63%                     
+client [51] (test)  loss: nan -> nan   acc: 40.79% -> 40.79%                   
+client [8] (test)  loss: 3.8168 -> 2.1791   acc: 36.87% -> 42.95%              
+client [18] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [94] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [81] (test)  loss: nan -> nan   acc: 5.10% -> 5.10%                     
+client [3] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                      
+client [11] (test)  loss: nan -> nan   acc: 0.96% -> 0.96%                     
+client [95] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [67] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+-------------------------- TRAINING EPOCH: 180 --------------------------      
+client [21] (test)  loss: nan -> nan   acc: 2.74% -> 2.74%                     
+client [79] (test)  loss: nan -> nan   acc: 0.22% -> 0.22%                     
+client [58] (test)  loss: nan -> nan   acc: 0.04% -> 0.04%                     
+client [88] (test)  loss: nan -> nan   acc: 21.76% -> 21.76%                   
+client [46] (test)  loss: nan -> nan   acc: 80.57% -> 80.57%                   
+client [11] (test)  loss: nan -> nan   acc: 0.96% -> 0.96%                     
+client [55] (test)  loss: nan -> nan   acc: 0.48% -> 0.48%                     
+client [13] (test)  loss: nan -> nan   acc: 10.70% -> 10.70%                   
+client [31] (test)  loss: nan -> nan   acc: 2.20% -> 2.20%                     
+client [75] (test)  loss: nan -> nan   acc: 2.25% -> 2.25%                     
+-------------------------- TRAINING EPOCH: 190 --------------------------      
+client [19] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [7] (test)  loss: nan -> nan   acc: 7.04% -> 7.04%                      
+client [57] (test)  loss: nan -> nan   acc: 0.46% -> 0.46%                     
+client [13] (test)  loss: nan -> nan   acc: 10.70% -> 10.70%                   
+client [43] (test)  loss: nan -> nan   acc: 0.23% -> 0.23%                     
+client [91] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [10] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [64] (test)  loss: nan -> nan   acc: 21.15% -> 21.15%                   
+client [82] (test)  loss: nan -> nan   acc: 9.28% -> 9.28%                     
+client [22] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+-------------------------- TRAINING EPOCH: 200 --------------------------      
+client [20] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+client [23] (test)  loss: nan -> nan   acc: 9.55% -> 9.55%                     
+client [88] (test)  loss: nan -> nan   acc: 21.76% -> 21.76%                   
+client [98] (test)  loss: nan -> nan   acc: 1.42% -> 1.42%                     
+client [79] (test)  loss: nan -> nan   acc: 0.22% -> 0.22%                     
+client [21] (test)  loss: nan -> nan   acc: 2.74% -> 2.74%                     
+client [92] (test)  loss: nan -> nan   acc: 33.33% -> 33.33%                   
+client [56] (test)  loss: nan -> nan   acc: 0.71% -> 0.71%                     
+client [5] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                      
+client [52] (test)  loss: nan -> nan   acc: 0.00% -> 0.00%                     
+Training... ---------------------------------------- 100% 1:33:40
+==================== Ditto TEST RESULTS: ====================                  
+{                                                                              
+    100: {'loss': 'nan -> 0.0000', 'accuracy': '18.78% -> 0.00%'},             
+    200: {'loss': 'nan -> 0.0000', 'accuracy': '6.72% -> 0.00%'}               
+}                                                                              
+Convergence (test_before):                                                     
+Ditto achieved 30.0%(33.13%) at epoch: 1                                       
+Ditto achieved 50.0%(55.65%) at epoch: 10                                      
+Convergence (test_after):                                                      
+Ditto achieved 60.0%(63.91%) at epoch: 0                                       
+Ditto achieved 70.0%(75.85%) at epoch: 2                                       

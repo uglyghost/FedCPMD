@@ -1,0 +1,4 @@
+cifar10: 85.54
+medmnistA: 97.05
+medmnistC: 95.06
+svhn: 95.22

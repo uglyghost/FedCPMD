@@ -1,0 +1,64 @@
+Setting up a new session...
+==================== ALGORITHM: FedSpeR_dyn ====================               
+Experiment Arguments:                                                          
+{                                                                              
+    'model': 'ModifiedLeNet5',                                                 
+    'dataset': 'cifar10',                                                      
+    'seed': 42,                                                                
+    'join_ratio': 0.1,                                                         
+    'global_epoch': 200,                                                       
+    'local_epoch': 5,                                                          
+    'finetune_epoch': 0,                                                       
+    'test_gap': 100,                                                           
+    'eval_test': 1,                                                            
+    'eval_train': 0,                                                           
+    'local_lr': 0.01,                                                          
+    'momentum': 0.0,                                                           
+    'weight_decay': 0.0,                                                       
+    'verbose_gap': 100000,                                                     
+    'batch_size': 32,                                                          
+    'visible': 1,                                                              
+    'global_testset': 0,                                                       
+    'straggler_ratio': 0,                                                      
+    'straggler_min_local_epoch': 1,                                            
+    'external_model_params_file': '',                                          
+    'use_cuda': 1,                                                             
+    'save_log': 1,                                                             
+    'save_model': 0,                                                           
+    'save_fig': 1,                                                             
+    'save_metrics': 1,                                                         
+    'warmup_round': 0.1,                                                       
+    'server_momentum': 0.9,                                                    
+    'dataset_args': {                                                          
+        'dataset': 'cifar10',                                                  
+        'client_num': 100,                                                     
+        'fraction': 0.5,                                                       
+        'seed': 42,                                                            
+        'split': 'sample',                                                     
+        'alpha': 0.1,                                                          
+        'least_samples': 40                                                    
+    }                                                                          
+}                                                                              
+Files already downloaded and verified
+Files already downloaded and verified
+Two smallest elements based on 'weight': ['fc2']
+Two smallest elements based on 'weight': ['fc2']
+Two smallest elements based on 'weight': ['fc1']
+Traceback (most recent call last):
+  File "E:\FL-bench\src\server\fedsper.py", line 288, in <module>
+    server.run()
+  File "E:\FL-bench\src\server\fedavg_V1.py", line 469, in run
+    self.train()  # 不是这里的问题
+  File "E:\FL-bench\src\server\fedsper.py", line 122, in train
+    ) = self.trainer.train(
+  File "E:\FL-bench\src\client\fedavg_V1.py", line 226, in train
+    eval_stats = self.train_and_log(verbose=verbose)
+  File "E:\FL-bench\src\client\fedavg_V1.py", line 139, in train_and_log
+    self.fit()
+  File "E:\FL-bench\src\client\fedavg_V1.py", line 271, in fit
+    loss.backward()
+  File "C:\Users\Admin\.conda\envs\FL\lib\site-packages\torch\_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "C:\Users\Admin\.conda\envs\FL\lib\site-packages\torch\autograd\__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
